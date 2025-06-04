@@ -6,20 +6,26 @@
     <title>Restaurant Food</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- fontawesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         html {
             scroll-behavior: smooth;
         }
     </style>
 </head>
-<body class="bg-[#fff4e3]">
+<body class="">
     <!-- navbar -->
      <header class="bg-[#fff4e3] fixed z-50 w-full top-0 shadow-lg">
-        <div class=" mx-auto  max-w-7xl py-5 flex justify-between items-center gap-10">
-            <img src="/img/logo.png" alt="">
+        <div class=" mx-auto  max-w-7xl py-5 flex justify-between items-center">
+            <!-- logo -->
+            <div class="w-[8rem] pl-6">
+                <img src="/img/logo.png" alt="">
+            </div>
 
             <div>
-                <ul class="hidden md:flex flex justify-center items-center gap-11">
+                <ul class="hidden md:flex flex justify-center items-center gap-8">
                     <li><a href="#" class="text-xl px-2 text-gray-700 hover:text-red-500 hover:underline">Home</a></li>
                     <li><a href="#" class="text-xl text-gray-700 hover:text-red-500  hover:underline">Our Menu</a></li>
                     <li><a href="#" class="text-xl px-2 text-gray-700 hover:text-red-500 hover:underline">Foods</a></li>
@@ -27,10 +33,11 @@
                     <li><a href="#" class="text-xl px-2 text-gray-700 hover:text-red-500 hover:underline">Contact us</a></li>
                     <li><a href="#" class="text-xl font-semibold px-2 text-red-500 hover:text-white py-2 px-4 border-2 border-red-400 rounded-3xl hover:bg-red-500">Login</a></li>
                 </ul>
-                <!-- btn  -->
-             <button type="button" id="menu-btn" class="flex md:hidden">
-                <img src="/img/Menu.png" alt="">
-             </button>
+
+                <!-- menu-bar -->
+                <div class="md:hidden w-[1rem] pr-6">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </div>
             
             <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-7 space-y-4 text-lg text-center font-semibold">
@@ -38,59 +45,247 @@
             <li><a href="#" class="block hover:text-blue-800 py-2">Features</a></li>
             <li><a href="#" class="block hover:text-blue-800 py-2">Join</a></li>
             <li><a href="#" class="block hover:text-blue-800 py-2">Contact</a></li>
-        </div>
+            </div>
         </div>
      </header>
 
      <!-- banner -->
-      <section class="pt-28 bg-[#fff4e3] pb-20  ">
-        <div class="mx-auto max-w-7xl  flex flex-col items-center justify-between gap-12 md:flex-row bg-[#fff4e3] ">
-            <div class="">
-                <div class="flex items-center">
-                    <h1 class="text-4xl font-bold text-gray-700">Desire</h1> <span class="text-2xl text-white font-bold py-2 px-6 shadow-lg bg-[#f8990a] rounded-3xl ml-3">Food</span>
+      <section class="pt-28 bg-[#fff4e3] pb-20 ">
+        <div class="mx-auto max-w-7xl ">
+            <div class="flex flex-col items-center justify-between gap-12 md:flex-row">
+                <div class=" items-center pt-4 px-2">
+                    <div class="flex items-center">
+                        <h1 class="text-4xl font-bold text-gray-700">Desire</h1>
+                         <div>
+                            <img src="/img/Frame 9.png" class="w-[9rem]" alt="">
+                        </div>
+                    </div>
+                    <!-- second h1 -->
+                    <h1 class="text-4xl font-bold text-gray-700 pt-4 pb-4">for Your Taste</h1>
+
+                    <p class="text-lg mb-10 md:max-w-2xl ">Food is what we eat to stay alive and healthy. It comes in many different forms and flavors, from fruits and vegetables to meats and grains.
+                    </p>
+                  <button><a href="#" class="px-6 py-4 bg-red-600 text-white rounded-3xl">Order Now</a></button>
                 </div>
-                <h1 class="text-4xl font-bold text-gray-700 pt-4 pb-4">for Your Taste</h1>
-                <p class="text-lg mb-10">Food is what we eat to stay alive and healthy. It comes in many different forms and flavors, from fruits and vegetables to meats and grains.
-                </p>
-                <button><a href="#" class="px-6 py-4 bg-red-600 text-white rounded-3xl">Order Now</a></button>
+
+                <!-- bnaner-img -->
+                <div>
+                  <img src="/img/right.png" alt="" class="">
+                </div>
             </div>
-            <img src="/img/right.png" alt="" class="w-90 h-900">
         </div>
       </section>
 
       <!-- cards -->
 
-      <section class="fixed mx-auto max-w-full bg-white py-20">
+      <section class="mx-auto max-w-full w-full bg-white py-10 ">
         <div class="grid md:flex flex-row justify-center items-center max-w-7xl mx-auto text-center gap-5">
-            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
-                <img src="/img/01.png" alt="" class="mb-2 fex justify-center mx-auto">
+            <div class="p-3 bg-white rounded-2xl shadow-lg">
+                <img src="/img/01.png" alt="" class="mb-2 flex justify-center mx-auto">
                 <h2 class="text-2xl font-semibold">Quality Food</h2>
                 <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                <h4><a href="#" class="text-xl font-semibold hover:text-red-500">Learn  more</a></h4>
+                <h4><a href="#" class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</a></h4>
             </div>
 
-            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
-                <img src="/img/02.png" alt="" class="mb-2 fex justify-center mx-auto ">
+            <div class="p-3 bg-white rounded-2xl shadow-lg">
+                <img src="/img/02.png" alt="" class="mb-2 flex justify-center mx-auto ">
                 <h2 class="text-2xl font-semibold">Quality Food</h2>
                 <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                <h4 class="text-xl font-semibold hover:text-red-500">Learn  more</h4>
+                <h4 class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</h4>
             </div>
 
-            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
-                <img src="/img/4.png" alt="" class="mb-2 fex justify-center mx-auto">
+            <div class="p-3 bg-white rounded-2xl shadow-lg">
+                <img src="/img/4.png" alt="" class="mb-2 flex justify-center mx-auto">
                 <h2 class="text-2xl font-semibold">Quality Food</h2>
                 <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                <h4 class="text-xl font-semibold hover:text-red-500">Learn  more</h4>
+                <h4 class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</h4>
             </div>
 
-            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
-                <img src="/img/5.png" alt="" class="mb-2 fex justify-center mx-auto">
+            <div class="p-3 bg-white rounded-2xl shadow-lg">
+                <img src="/img/5.png" alt="" class="mb-2 flex justify-center mx-auto">
                 <h2 class="text-2xl font-semibold">Quality Food</h2>
                 <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-                <h4 class="text-xl font-semibold hover:text-red-500">Learn  more</h4>
+                <h4 class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</h4>
             </div>
         </div>
       </section>
+
+      <!-- choose us section -->
+       <section class="mx-auto max-w-full w-full bg-white py-20 ">
+        <div class=" max-w-7xl mx-auto items-center flex flex-col justify-between gap-10 md:flex-row">
+            <!-- img -->
+            <div>
+                <img src="/img/left.png" class="w-[30rem]" alt="">
+            </div>
+
+            <!-- content -->
+             <div>
+                <h1 class="text-4xl font-bold mb-5">Why People Choose Us?</h1>
+
+                <div>
+                    <!-- cards -->
+                    <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3">
+                        <img src="/img/Frame 35.png" alt="">
+                        <div las>
+                            <h3 class="font-bold text-lg">Convenient and Reliable</h3>
+                            <p class="max-w-xl tracking-normal text-lg">Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3">
+                        <img src="/img/Frame 35 (1).png" alt="">
+                        <div>
+                            <h3 class="font-bold text-lg">Variety Of Options</h3>
+                            <p class="max-w-xl tracking-normal text-lg">From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3">
+                        <img src="/img/Frame 35 (2).png" alt="">
+                        <div>
+                            <h3 class="font-bold text-lg">Eat Burger</h3>
+                            <p class="max-w-xl tracking-normal text-lg">Our burgers are grilled to perfection, with juicy patties, and flavorful toppings that make every bite a delicious experience.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </div>
+       </section>
+
+       <!-- Best Seller Section -->
+        <section class="mx-auto max-w-full py-10 w-full bg-[#fff4e3]">
+
+            <div class="mx-auto max-w-7xl text-center">
+                <div class="py-10">
+                    <h1 class="text-4xl font-bold pb-2">Our Best Seller Dishes</h1>
+                    <p class="text-lg text-gray-800 ">Our fresh garden salad is a light and refreshing option. It features a mix of <br> crisp lettuce, juicy tomatoes all tossed in your choice of dressing.</p>
+                </div>
+
+                <!-- cards sections one -->
+
+                <div class="grid md:flex flex-row justify-center items-center gap-5 mb-20">
+                    <div class="bg-white rounded-2xl shadow-lg">
+                      <div>
+                        <div><img src="/img/Frame 45.png" alt=""></div>
+                      </div>
+                      <div class="bg-white px-3 pb-7 rounded-xl pt-5">
+                        <div class="flex justify-between py-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Breakfast Food</h4>
+                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                      </div>
+                      <div class="flex justify-between pt-4">
+                        <img src="/img/rating (3).png" class="w-[9rem]" alt="">
+                        <p class="text-xl font-semibold">$230</p>
+                      </div>
+                      </div>
+                    </div>
+
+                   <div class="bg-white rounded-2xl shadow-lg">
+                      <div>
+                        <div><img src="/img/Frame 45 (1).png" alt=""></div>
+                      </div>
+                      <div class="bg-white px-3 pb-7 rounded-xl pt-5">
+                        <div class="flex justify-between py-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Health <br> Breakfast</h4>
+                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                      </div>
+                      <div class="flex justify-between pt-4">
+                        <img src="/img/rating (3).png" class="w-[9rem]" alt="">
+                        <p class="text-xl font-semibold">$220</p>
+                      </div>
+                      </div>
+                    </div>
+
+                   <div class="bg-white rounded-2xl shadow-lg">
+                      <div>
+                        <div><img src="/img/Frame 45 (2).png" alt=""></div>
+                      </div>
+                      <div class="bg-white px-3 pb-7 rounded-xl pt-5">
+                        <div class="flex justify-between py-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Breakfast Food</h4>
+                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                      </div>
+                      <div class="flex justify-between pt-4">
+                        <img src="/img/rating (3).png" class="w-[9rem]" alt="">
+                        <p class="text-xl font-semibold">$230</p>
+                      </div>
+                      </div>
+                    </div>
+
+                </div>
+
+                <!-- card section two -->
+
+                <div class="grid md:flex flex-row justify-center items-center gap-5 mb-20">
+                    <div class="bg-white rounded-2xl shadow-lg">
+                      <div>
+                        <div><img src="/img/Frame 45 (3).png" alt=""></div>
+                      </div>
+                      <div class="bg-white px-3 pb-7 rounded-xl pt-5">
+                        <div class="flex justify-between py-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Breakfast <br>Fruits</h4>
+                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                      </div>
+                      <div class="flex justify-between pt-4">
+                        <img src="/img/rating (3).png" class="w-[9rem]" alt="">
+                        <p class="text-xl font-semibold">$200</p>
+                      </div>
+                      </div>
+                    </div>
+
+                   <div class="bg-white rounded-2xl shadow-lg">
+                      <div>
+                        <div><img src="/img/Frame 45 (4).png" alt=""></div>
+                      </div>
+                      <div class="bg-white px-3 pb-7 rounded-xl pt-5">
+                        <div class="flex justify-between py-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Breakfast <br>Appetizer</h4>
+                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                      </div>
+                      <div class="flex justify-between pt-4">
+                        <img src="/img/rating (3).png" class="w-[9rem]" alt="">
+                        <p class="text-xl font-semibold">$210</p>
+                      </div>
+                      </div>
+                    </div>
+
+                   <div class="bg-white rounded-2xl shadow-lg">
+                      <div>
+                        <div><img src="/img/Frame 45 (5).png" alt=""></div>
+                      </div>
+                      <div class="bg-white px-3 pb-7 rounded-xl pt-5">
+                        <div class="flex justify-between py-4">
+                        <h4 class="text-xl font-semibold text-gray-800">Lunch Food</h4>
+                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                      </div>
+                      <div class="flex justify-between pt-4">
+                        <img src="/img/rating (3).png" class="w-[9rem]" alt="">
+                        <p class="text-xl font-semibold">$330</p>
+                      </div>
+                      </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- customer feedback section -->
+
+        <section>
+            <div>
+                <div>
+
+                </div>
+
+                <!-- img -->
+                 <div>
+                    <img src="/img/image (3).png" alt="">
+                 </div>
+            </div>
+        </section>
+
+
 
 
 
