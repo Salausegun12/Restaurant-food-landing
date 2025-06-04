@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Food</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body class="bg-[#fff4e3]">
+    <!-- navbar -->
+     <header class="bg-[#fff4e3] fixed z-50 w-full top-0 shadow-lg">
+        <div class=" mx-auto  max-w-7xl py-5 flex justify-between items-center gap-10">
+            <img src="/img/logo.png" alt="">
+
+            <div>
+                <ul class="hidden md:flex flex justify-center items-center gap-11">
+                    <li><a href="#" class="text-xl px-2 text-gray-700 hover:text-red-500 hover:underline">Home</a></li>
+                    <li><a href="#" class="text-xl text-gray-700 hover:text-red-500  hover:underline">Our Menu</a></li>
+                    <li><a href="#" class="text-xl px-2 text-gray-700 hover:text-red-500 hover:underline">Foods</a></li>
+                    <li><a href="#" class="text-xl text-gray-700 hover:text-red-500 hover:underline">About us</a></li>
+                    <li><a href="#" class="text-xl px-2 text-gray-700 hover:text-red-500 hover:underline">Contact us</a></li>
+                    <li><a href="#" class="text-xl font-semibold px-2 text-red-500 hover:text-white py-2 px-4 border-2 border-red-400 rounded-3xl hover:bg-red-500">Login</a></li>
+                </ul>
+                <!-- btn  -->
+             <button type="button" id="menu-btn" class="flex md:hidden">
+                <img src="/img/Menu.png" alt="">
+             </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-7 space-y-4 text-lg text-center font-semibold">
+            <li><a href="#"  class="block hover:text-blue-800 py-2">Home</a></li>
+            <li><a href="#" class="block hover:text-blue-800 py-2">Features</a></li>
+            <li><a href="#" class="block hover:text-blue-800 py-2">Join</a></li>
+            <li><a href="#" class="block hover:text-blue-800 py-2">Contact</a></li>
+        </div>
+        </div>
+     </header>
+
+     <!-- banner -->
+      <section class="pt-28 bg-[#fff4e3] pb-20  ">
+        <div class="mx-auto max-w-7xl  flex flex-col items-center justify-between gap-12 md:flex-row bg-[#fff4e3] ">
+            <div class="">
+                <div class="flex items-center">
+                    <h1 class="text-4xl font-bold text-gray-700">Desire</h1> <span class="text-2xl text-white font-bold py-2 px-6 shadow-lg bg-[#f8990a] rounded-3xl ml-3">Food</span>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-700 pt-4 pb-4">for Your Taste</h1>
+                <p class="text-lg mb-10">Food is what we eat to stay alive and healthy. It comes in many different forms and flavors, from fruits and vegetables to meats and grains.
+                </p>
+                <button><a href="#" class="px-6 py-4 bg-red-600 text-white rounded-3xl">Order Now</a></button>
+            </div>
+            <img src="/img/right.png" alt="" class="w-90 h-900">
+        </div>
+      </section>
+
+      <!-- cards -->
+
+      <section class="fixed mx-auto max-w-full bg-white py-20">
+        <div class="grid md:flex flex-row justify-center items-center max-w-7xl mx-auto text-center gap-5">
+            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
+                <img src="/img/01.png" alt="" class="mb-2 fex justify-center mx-auto">
+                <h2 class="text-2xl font-semibold">Quality Food</h2>
+                <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                <h4><a href="#" class="text-xl font-semibold hover:text-red-500">Learn  more</a></h4>
+            </div>
+
+            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
+                <img src="/img/02.png" alt="" class="mb-2 fex justify-center mx-auto ">
+                <h2 class="text-2xl font-semibold">Quality Food</h2>
+                <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                <h4 class="text-xl font-semibold hover:text-red-500">Learn  more</h4>
+            </div>
+
+            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
+                <img src="/img/4.png" alt="" class="mb-2 fex justify-center mx-auto">
+                <h2 class="text-2xl font-semibold">Quality Food</h2>
+                <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                <h4 class="text-xl font-semibold hover:text-red-500">Learn  more</h4>
+            </div>
+
+            <div class="p-3 bg-white text-center rounded-2xl shadow-lg">
+                <img src="/img/5.png" alt="" class="mb-2 fex justify-center mx-auto">
+                <h2 class="text-2xl font-semibold">Quality Food</h2>
+                <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
+                <h4 class="text-xl font-semibold hover:text-red-500">Learn  more</h4>
+            </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+            const menuBtn = document.getElementById("menu-btn");
+            const mobileMenu = document.getElementById("mobile-menu");
+            menuBtn.addEventListener("click", () => {
+                mobileMenu.classList.toggle("hidden");
+            });
+        </script>
+</body>
+</html>
