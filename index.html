@@ -10,7 +10,7 @@
      <link rel="shortcut icon" href="/img/Frame 2.png" type="image/x-icon">
 
     <!-- fontawesome cdn -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <style>
         html {
@@ -42,13 +42,13 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            
-            <div id="mobile-menu" class="hidden md:hidden bg-white px-6 py-7 space-y-4 text-lg text-center font-semibold">
+            <!-- It has to be ul not div (li is not permitted to be under div) -->
+            <ul id="mobile-menu" class="hidden md:hidden bg-white px-6 py-7 space-y-4 text-lg text-center font-semibold">
             <li><a href="#"  class="block hover:text-blue-800 py-2">Home</a></li>
             <li><a href="#" class="block hover:text-blue-800 py-2">Features</a></li>
             <li><a href="#" class="block hover:text-blue-800 py-2">Join</a></li>
             <li><a href="#" class="block hover:text-blue-800 py-2">Contact</a></li>
-            </div>
+            </ul>
         </div>
      </header>
 
@@ -68,7 +68,8 @@
 
                     <p class="text-lg mb-10 md:max-w-2xl ">Food is what we eat to stay alive and healthy. It comes in many different forms and flavors, from fruits and vegetables to meats and grains.
                     </p>
-                  <button><a href="#" class="px-6 py-4 bg-red-600 text-white rounded-3xl">Order Now</a></button>
+                  <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Order Now</a>
                 </div>
 
                 <!-- bnaner-img -->
@@ -174,7 +175,8 @@
                       <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                         <div class="flex justify-between py-4">
                         <h4 class="text-xl font-semibold text-gray-800">Breakfast Food</h4>
-                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                        <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
                       </div>
                       <div class="flex justify-between pt-4">
                         <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -190,7 +192,8 @@
                       <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                         <div class="flex justify-between py-4">
                         <h4 class="text-xl font-semibold text-gray-800">Health <br> Breakfast</h4>
-                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                        <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
                       </div>
                       <div class="flex justify-between pt-4">
                         <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -206,7 +209,8 @@
                       <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                         <div class="flex justify-between py-4">
                         <h4 class="text-xl font-semibold text-gray-800">Breakfast Food</h4>
-                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                        <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
                       </div>
                       <div class="flex justify-between pt-4">
                         <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -227,7 +231,8 @@
                       <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                         <div class="flex justify-between py-4">
                         <h4 class="text-xl font-semibold text-gray-800">Breakfast <br>Fruits</h4>
-                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                        <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
                       </div>
                       <div class="flex justify-between pt-4">
                         <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -243,7 +248,8 @@
                       <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                         <div class="flex justify-between py-4">
                         <h4 class="text-xl font-semibold text-gray-800">Breakfast <br>Appetizer</h4>
-                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                        <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
                       </div>
                       <div class="flex justify-between pt-4">
                         <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -259,7 +265,8 @@
                       <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                         <div class="flex justify-between py-4">
                         <h4 class="text-xl font-semibold text-gray-800">Lunch Food</h4>
-                        <button><a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a></button>
+                        <!-- btn format -->
+                        <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
                       </div>
                       <div class="flex justify-between pt-4">
                         <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -289,7 +296,6 @@
                                 <h4 class="text-xl font-semibold text-red-600">Tayyab Sohail</h4>
                             <p class="text-lg">UI/UX Designer</p>
                             </div>
-                            
                         </div>
 
                         <div><img src="/img/Frame 64.png" alt=""></div>
