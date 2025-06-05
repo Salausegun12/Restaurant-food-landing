@@ -42,7 +42,6 @@
                     <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
-            <!-- It has to be ul not div (li is not permitted to be under div) -->
             <ul id="mobile-menu" class="hidden md:hidden bg-white px-6 py-7 space-y-4 text-lg text-center font-semibold">
             <li><a href="#"  class="block hover:text-blue-800 py-2">Home</a></li>
             <li><a href="#" class="block hover:text-blue-800 py-2">Features</a></li>
@@ -313,10 +312,10 @@
         <!-- footer section -->
 
         <footer class="mx-auto max-w-full text-gray-800 bg-white">
-            <div class="mx-auto max-w-7xl">
+            <div class="mx-auto max-w-7xl items-center">
 
                 <!-- Newsletter -->
-                 <div class="text-gray-700 text-sm flex flex-col md:flex-row md:justify-between items-center border-b b-gray-300 pt-8 pb-7 mb-5 px-4">
+                  <div class="text-gray-700 text-sm flex  flex-col md:flex-row md:justify-between items-center border-b b-gray-300 pt-8 pb-7 mb-5 px-4">
                     <div class="mb-7">
                         <h2 class="text-4xl font-semibold text-gray-900 mb-3">Join Our <span class="text-red-600">Newsletter</span>
                         </h2>
@@ -326,8 +325,71 @@
                         <input type="email" placeholder="Enter your email address" class="border rounded-xl border-1 border-gray-300 py-3 pl-4 pr-10 focus:outline-none">
                         <button type="submit" class="bg-red-500 text-white py-3 px-4 rounded-2xl hover:bg-red-600">Submit</button>
                     </div>
-                    
-                 </div>
+                  </div>
+
+                  <!-- Links -->
+                   <div class="py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+                    <!-- Products & Services -->
+                    <div class="space-y-2 grid">
+                      <h3 class="text-xl font-semibold">Products & Service</h3>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Products</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Services</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Appliance</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold">Storage <span class="border border-yellow-300 text-yellow-300 py-1 px-2 bg-[#fff4e3] rounded-2xl">New</span></a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Lifestyle</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                      </ul>
+                    </div>
+
+                    <!-- Shop Now -->
+                    <div class="space-y-2 grid">
+                      <h3 class="text-xl font-semibold">Shop Now</h3>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Offers</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Promos</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Online Shop FAQ</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold">Business Offer <span class="border border-yellow-300 text-yellow-300 py-1 px-2 bg-[#fff4e3] rounded-2xl">New</span></a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Student Offer</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                      </ul>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="space-y-2 grid">
+                      <h3 class="text-xl font-semibold">Support</h3>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Contact</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Email Support</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Live Chat</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold">Phone Support <span class="border border-yellow-300 text-yellow-300 py-1 px-2 bg-[#fff4e3] rounded-2xl">New</span></a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Community</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                      </ul>
+                    </div>
+
+                    <!-- Account -->
+                    <div class="space-y-2 grid">
+                      <h3 class="text-xl font-semibold">Account</h3>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">My Products</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Orders</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Wishlist</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold">Service <span class="border border-yellow-300 text-yellow-300 py-1 px-2 bg-[#fff4e3] rounded-2xl">New</span></a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Rewards</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                      </ul>
+                    </div>
+
+                    <!-- About -->
+                    <div class="space-y-2 grid">
+                      <h3 class="text-xl font-semibold">About</h3>
+                      <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Company Info</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Brand Guidelines</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Career</a></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold">Investors <span class="border border-yellow-300 text-yellow-300 py-1 px-2 bg-[#fff4e3] rounded-2xl">New</span></a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                        <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">About Us</a> <span><i class="fa-solid fa-location-arrow"></i></span></li>
+                      </ul>
+                    </div>
+
+                   </div>
             </div>
         </footer>
 
