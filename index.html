@@ -70,6 +70,7 @@
           background-clip: text;
       }
     </style>
+
 </head>
 <body class="">
   <!-- navbar -->
@@ -112,7 +113,8 @@
         </div>
     </header>
 
-    <!-- banner -->
+
+    <!-- Banner -->
     <section id="home" class="min-h-screen bg-gradient-to-br from-orange-50 to-red-50 flex items-center justify-center relative overflow-hidden">
       <!-- Bg animation Element -->
         <div class="absolute insert-0 overflow-hidden">
@@ -144,7 +146,7 @@
                   </div>
               </div>
 
-              <!-- bnaner-img -->
+              <!-- banner-img -->
               <div class="relative animate-fade-in-right">
                 <div class="relative z-10">
                   <img src="/img/right.png" alt="" class="w-full h-auto rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300">
@@ -152,78 +154,114 @@
 
 
                 <!-- floating animation -->
-                  <div class="absolute -top-6 -left-6 w-12 h-12 bg-orange-400 rounded-full animat-bounce-slow opacity-800 "></div>
+                  <div class="absolute -top-6 -left-6 w-12 h-12 bg-orange-400 rounded-full animate-bounce-slow opacity-800 "></div>
                   <div class="absolute -bottom-6 -right-6 w-16 h-16 bg-red-400 rounded-full animate-float opacity-80"></div>
               </div>
           </div>
       </div>
     </section>
 
-    <!-- cards -->
-    <section class="mx-auto max-w-full w-full bg-white py-10 ">
-      <div class="grid md:flex flex-row justify-center items-center max-w-7xl mx-auto text-center gap-5">
-          <div class="p-3 bg-white rounded-2xl shadow-lg">
+
+
+    <!-- Cards -->
+    <section class="mx-auto max-w-full w-full bg-white py-10 scroll-smooth">
+      <div class="grid md:flex flex-row py-10 justify-center items-center max-w-7xl mx-auto gap-5 transition-full duration-300">
+        <!-- card1 -->
+          <div class="p-4 bg-white rounded-2xl shadow-lg animate-fade-in-right transition">
+            <div class="animate-float transition">
               <img src="/img/01.png" alt="" class="mb-2 flex justify-center mx-auto">
+            </div>
+            
+            <div class="text-center">
               <h2 class="text-2xl font-semibold">Quality Food</h2>
               <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-              <h4><a href="#" class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</a></h4>
+              <a href="#" class="text-lg font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</a>
+            </div>
           </div>
 
-          <div class="p-3 bg-white rounded-2xl shadow-lg">
+          <!-- card2 -->
+          <div class="p-4 bg-white rounded-2xl shadow-lg animate-fade-in-right transition">
+            <div class="animate-float transition">
               <img src="/img/02.png" alt="" class="mb-2 flex justify-center mx-auto ">
-              <h2 class="text-2xl font-semibold">Quality Food</h2>
+            </div>
+              
+            <div class="text-center">
+              <h2 class="text-2xl font-semibold">Fast Delivery</h2>
               <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-              <h4 class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</h4>
+              <a href="#" class="text-lg font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</a>
+            </div>
           </div>
 
-          <div class="p-3 bg-white rounded-2xl shadow-lg">
+          <!-- card3 -->
+          <div class="p-4 bg-white rounded-2xl shadow-lg animate-fade-in-right transition">
+            <div class="animate-float transition">
               <img src="/img/4.png" alt="" class="mb-2 flex justify-center mx-auto">
-              <h2 class="text-2xl font-semibold">Quality Food</h2>
+            </div>
+              
+            <div class="text-center">
+              <h2 class="text-2xl font-semibold">Pay On Delivery</h2>
               <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-              <h4 class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</h4>
+              <a href="#" class="text-lg font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</a>
+            </div>
           </div>
 
-          <div class="p-3 bg-white rounded-2xl shadow-lg">
+          <!-- cards4 -->
+          <div class="p-3 bg-white rounded-2xl shadow-lg animate-fade-in-right transition">
+            <div class="animate-float transition">
               <img src="/img/5.png" alt="" class="mb-2 flex justify-center mx-auto">
-              <h2 class="text-2xl font-semibold">Quality Food</h2>
+            </div>
+              
+            <div class="text-center">
+              <h2 class="text-2xl font-semibold">Make Your Order</h2>
               <p class="py-2 text-gray-700">Contrary to popular belief, Lorem Ipsum is not simply random text</p>
-              <h4 class="text-xl font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</h4>
+              <a href="#" class="text-lg font-semibold hover:text-red-600 hover:cursor-pointer">Learn  more</a>
+            </div>
           </div>
       </div>
     </section>
 
-    <!-- choose us section -->
+
+
+    <!-- Choose us section -->
     <section class="mx-auto max-w-full w-full bg-white py-20 ">
-      <div class=" max-w-7xl mx-auto items-center flex flex-col justify-between gap-10 md:flex-row">
+      <div class=" max-w-7xl mx-auto items-center flex flex-col justify-between gap-10 md:flex-row transition-full duration-300">
           <!-- img -->
-          <div>
-              <img src="/img/left.png" class="w-[30rem]" alt="">
+          <div class="animate-fade-in-left transition">
+              <img src="/img/left.png" class="w-[30rem]" alt="" class="animate-bounce-slow">
           </div>
 
           <!-- content -->
-            <div>
-              <h1 class="text-4xl font-bold mb-5">Why People Choose Us?</h1>
+            <div> 
+              <div class="animate-fade-in-down transition">
+                <h1 class="text-4xl font-bold mb-5">Why People Choose Us?</h1>
+              </div>
 
               <div>
                   <!-- cards -->
-                  <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3">
-                      <img src="/img/Frame 35.png" alt="">
-                      <div las>
+                  <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-5 px-2 rounded-xl my-3 animate-fade-in-right transition">
+                      <div class="animate-bounce-slow transition">
+                        <img src="/img/Frame 35.png" alt="">
+                      </div>
+                      <div>
                           <h3 class="font-bold text-lg">Convenient and Reliable</h3>
                           <p class="max-w-xl tracking-normal text-lg">Whether you dine in, take out, or order delivery, our service is convenient, fast, and reliable, making mealtime hassle-free.</p>
                       </div>
                   </div>
 
-                  <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3">
-                      <img src="/img/Frame 35 (1).png" alt="">
+                  <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-5 px-2 rounded-xl my-3 animate-fade-in-right transition">
+                      <div class="animate-bounce-slow transition">
+                        <img src="/img/Frame 35 (1).png" alt="">
+                      </div>
                       <div>
                           <h3 class="font-bold text-lg">Variety Of Options</h3>
                           <p class="max-w-xl tracking-normal text-lg">From hearty meals to light snacks, we offer a wide range of options to suit every taste and craving.</p>
                       </div>
                   </div>
 
-                  <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3">
-                      <img src="/img/Frame 35 (2).png" alt="">
+                  <div class="flex justify-center items-center gap-3 bg-white shadow-lg py-4 px-2 rounded-xl my-3 animate-fade-in-right transition">
+                      <div class="animate-bounce-slow transition">
+                        <img src="/img/Frame 35 (2).png" alt="">
+                      </div>
                       <div>
                           <h3 class="font-bold text-lg">Eat Burger</h3>
                           <p class="max-w-xl tracking-normal text-lg">Our burgers are grilled to perfection, with juicy patties, and flavorful toppings that make every bite a delicious experience.</p>
@@ -234,27 +272,35 @@
       </div>
     </section>
 
+
+
     <!-- Best Seller Section -->
-    <section class="mx-auto max-w-full py-10 w-full bg-gradient-to-r from-[#fff4e3] via-[#fff4e3] to-white">
+    <section class="mx-auto max-w-full py-10 w-full bg-gradient-to-r from-[#fff4e3] via-[#fff4e3] to-white transition-full duration-300">
 
         <div class="mx-auto max-w-7xl text-center">
             <div class="py-10">
-                <h1 class="text-4xl font-bold pb-2">Our Best Seller Dishes</h1>
-                <p class="text-lg text-gray-800 ">Our fresh garden salad is a light and refreshing option. It features a mix of <br> crisp lettuce, juicy tomatoes all tossed in your choice of dressing.</p>
+                <div class="animate-fade-in-down transition">
+                  <h1 class="text-4xl font-bold pb-2">Our Best Seller Dishes</h1>
+                </div>
+                <div class="animate-fade-in-up transition">
+                  <p class="text-lg text-gray-800 ">Our fresh garden salad is a light and refreshing option. It features a mix of <br> crisp lettuce, juicy tomatoes all tossed in your choice of dressing.</p>
+                </div>
             </div>
 
-            <!-- cards sections one -->
+            <!-- cards sections line-one -->
 
-            <div class="grid md:flex flex-row justify-center items-center gap-5 mb-20">
-                <div class="bg-white rounded-2xl shadow-lg">
-                  <div>
+            <div class="grid md:flex flex-row justify-center items-center gap-5 mb-20 ">
+                <div class="bg-white rounded-2xl shadow-lg transition animate-fade-in-left">
+                  <div class="animate-pulse-slow transition" style="animation-delay: 0.1s;">
                     <div><img src="/img/Frame 45.png" alt=""></div>
                   </div>
                   <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                     <div class="flex justify-between py-4">
                     <h4 class="text-xl font-semibold text-gray-800">Breakfast Food</h4>
                     <!-- btn format -->
-                    <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
+                    <div class="animate-float transition">
+                      <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-orange-500 shadow-xl">Buy Now</a>
+                    </div>
                   </div>
                   <div class="flex justify-between pt-4">
                     <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -263,15 +309,17 @@
                   </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg">
-                  <div>
+                <div class="bg-white rounded-2xl shadow-lg transition animate-fade-in-left">
+                  <div class="animate-pulse-slow transition" style="animation-delay: 0.5s;">
                     <div><img src="/img/Frame 45 (1).png" alt=""></div>
                   </div>
                   <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                     <div class="flex justify-between py-4">
-                    <h4 class="text-xl font-semibold text-gray-800">Health <br> Breakfast</h4>
+                    <h4 class="text-xl font-semibold text-gray-800">Health Breakfast</h4>
                     <!-- btn format -->
-                    <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
+                    <div class="animate-float transition">
+                      <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-orange-500 shadow-xl">Buy Now</a>
+                    </div>
                   </div>
                   <div class="flex justify-between pt-4">
                     <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -280,15 +328,17 @@
                   </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg">
-                  <div>
+                <div class="bg-white rounded-2xl shadow-lg transition animate-fade-in-left">
+                  <div class="animate-pulse-slow transition" style="animation-delay: 1s;">
                     <div><img src="/img/Frame 45 (2).png" alt=""></div>
                   </div>
                   <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                     <div class="flex justify-between py-4">
                     <h4 class="text-xl font-semibold text-gray-800">Breakfast Food</h4>
                     <!-- btn format -->
-                    <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
+                    <div class="animate-float transition">
+                      <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-orange-500 shadow-xl">Buy Now</a>
+                    </div>
                   </div>
                   <div class="flex justify-between pt-4">
                     <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -299,18 +349,20 @@
 
             </div>
 
-            <!-- card section two -->
+            <!-- card section line-two -->
 
             <div class="grid md:flex flex-row justify-center items-center gap-5 mb-20">
-                <div class="bg-white rounded-2xl shadow-lg">
-                  <div>
+                <div class="bg-white rounded-2xl shadow-lg transition animate-fade-in-right">
+                  <div class="animate-pulse-slow transition" style="animation-delay: 0.1s;">
                     <div><img src="/img/Frame 45 (3).png" alt=""></div>
                   </div>
                   <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                     <div class="flex justify-between py-4">
-                    <h4 class="text-xl font-semibold text-gray-800">Breakfast <br>Fruits</h4>
+                    <h4 class="text-xl font-semibold text-gray-800">Breakfast Fruits</h4>
                     <!-- btn format -->
-                    <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
+                    <div class="animate-float transition">
+                      <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-orange-500 shadow-xl">Buy Now</a>
+                    </div>
                   </div>
                   <div class="flex justify-between pt-4">
                     <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -319,15 +371,17 @@
                   </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg">
-                  <div>
+                <div class="bg-white rounded-2xl shadow-lg transition animate-fade-in-right">
+                  <div class="animate-pulse-slow transition" style="animation-delay: 0.5s;">
                     <div><img src="/img/Frame 45 (4).png" alt=""></div>
                   </div>
                   <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                     <div class="flex justify-between py-4">
                     <h4 class="text-xl font-semibold text-gray-800">Breakfast <br>Appetizer</h4>
                     <!-- btn format -->
-                    <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
+                    <div class="animate-float transition">
+                      <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-orange-500 shadow-xl">Buy Now</a>
+                    </div>
                   </div>
                   <div class="flex justify-between pt-4">
                     <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -336,15 +390,17 @@
                   </div>
                 </div>
 
-                <div class="bg-white rounded-2xl shadow-lg">
-                  <div>
+                <div class="bg-white rounded-2xl shadow-lg transition animate-fade-in-right">
+                  <div class="animate-pulse-slow transition" style="animation-delay: 1s;">
                     <div><img src="/img/Frame 45 (5).png" alt=""></div>
                   </div>
                   <div class="bg-white px-3 pb-7 rounded-xl pt-5">
                     <div class="flex justify-between py-4">
                     <h4 class="text-xl font-semibold text-gray-800">Lunch Food</h4>
                     <!-- btn format -->
-                    <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-yellow-500 hover:text-red-700 hover:font-semibold hover:text-lg">Buy Now</a>
+                    <div class="animate-float transition">
+                      <a href="#" class="text-white py-3 px-3 bg-red-600 rounded-3xl hover:bg-orange-500 shadow-xl">Buy Now</a>
+                    </div>
                   </div>
                   <div class="flex justify-between pt-4">
                     <img src="/img/rating (3).png" class="w-[9rem]" alt="">
@@ -358,29 +414,29 @@
     </section>
 
 
-    <!-- customer feedback section -->
+    <!-- Customer feedback section -->
     <section class="bg-gradient-to-r from-white via-[#fff4e3] to-[#fff4e3] max-w-full mx-auto pb-14">
-        <div class="mx-auto max-w-7xl flex flex-col md:flex-row justify-center items-center gap-5">
+        <div class="mx-auto max-w-7xl flex flex-col md:flex-row justify-center items-center gap-5 transition-full duration-300">
             <!-- content -->
-            <div class="pl-4">
+            <div class="pl-4 animate-fade-in-left">
                 <h1 class="text-4xl font-bold mb-6">Customer <span>Feedback</span></h1>
                 <p class="max-w-xl text-xl mb-12 text-gray-800">I recently dined at your restaurant and wanted to share my experience. The food was absolutely delicious, and I was impressed by the freshness of the ingredients. Each dish was bursting with flavor, and the portion sizes were perfect. The service was quick and efficient, and the staff was incredibly friendly and welcoming.</p>
 
                 <div class="flex items-center justify-between">
                     <div class="flex items-center justify-between gap-4">
-                        <div><img src="/img/Ellipse 2.png" alt=""></div>
+                        <div class="animate-pulse-slow transition"><img src="/img/Ellipse 2.png" alt=""></div>
                         <div>
                             <h4 class="text-xl font-semibold text-red-600">Tayyab Sohail</h4>
                         <p class="text-lg">UI/UX Designer</p>
                         </div>
                     </div>
 
-                    <div><img src="/img/Frame 64.png" alt=""></div>
+                    <div class="animate-bounce-slow transition"><img src="/img/Frame 64.png" alt=""></div>
                 </div>
             </div>
 
             <!-- img -->
-              <div>
+              <div class=" animate-fade-in-right">
                 <img src="/img/image (3).png" alt="">
               </div>
         </div>
@@ -389,25 +445,25 @@
 
     <!-- footer section -->
     <footer class="mx-auto max-w-full text-gray-800 bg-white">
-        <div class="mx-auto max-w-7xl items-center">
+        <div class="mx-auto max-w-7xl items-center transition-full duration">
 
             <!-- Newsletter -->
               <div class="text-gray-700 text-sm flex  flex-col md:flex-row md:justify-between items-center border-b b-gray-300 pt-8 pb-7 mb-5 px-4">
-                <div class="mb-7">
+                <div class="mb-7 animate-fade-in-right transition">
                     <h2 class="text-4xl font-semibold text-gray-900 mb-3">Join Our <span class="text-red-600">Newsletter</span>
                     </h2>
                     <p class="tracking-normal text-lg">Be the first to know our latest updates, exclusive offers, and more.</p>
                 </div>
-                <div class="gap-4">
+                <div class="gap-4 animate-fade-in-left transition">
                     <input type="email" placeholder="Enter your email address" class="border rounded-xl border-1 border-gray-300 py-3 pl-4 pr-10 focus:outline-none">
                     <button type="submit" class="bg-red-500 text-white py-3 px-4 rounded-2xl hover:bg-red-600">Submit</button>
                 </div>
               </div>
 
               <!-- Links -->
-                <div class="py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center pl-4 border-b border-gray-300">
+                <div class="py-10 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center pl-4 border-b border-gray-300 transition-full duration-300">
                 <!-- Products & Services -->
-                <div class="space-y-2 grid">
+                <div class="space-y-2 grid animate-fade-in-up transition">
                   <h3 class="text-xl font-semibold">Products & Service</h3>
                   <ul class="space-y-2">
                     <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Products</a></li>
@@ -419,7 +475,7 @@
                 </div>
 
                 <!-- Shop Now -->
-                <div class="space-y-2 grid">
+                <div class="space-y-2 grid animate-fade-in-up transition">
                   <h3 class="text-xl font-semibold">Shop Now</h3>
                   <ul class="space-y-2">
                     <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Offers</a></li>
@@ -431,7 +487,7 @@
                 </div>
 
                 <!-- Support -->
-                <div class="space-y-2 grid">
+                <div class="space-y-2 grid animate-fade-in-up transition">
                   <h3 class="text-xl font-semibold">Support</h3>
                   <ul class="space-y-2">
                     <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Contact</a></li>
@@ -443,7 +499,7 @@
                 </div>
 
                 <!-- Account -->
-                <div class="space-y-2 grid">
+                <div class="space-y-2 grid animate-fade-in-up transition">
                   <h3 class="text-xl font-semibold">Account</h3>
                   <ul class="space-y-2">
                     <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">My Products</a></li>
@@ -455,7 +511,7 @@
                 </div>
 
                 <!-- About -->
-                <div class="space-y-2 grid">
+                <div class="space-y-2 grid animate-fade-in-up transition">
                   <h3 class="text-xl font-semibold">About</h3>
                   <ul class="space-y-2">
                     <li><a href="#" class="hover:text-red-500 hover:font-semibold text-lg">Company Info</a></li>
